@@ -1,52 +1,70 @@
-# Payload + NextJS Server-Rendered TypeScript Boilerplate
+# Getting Started with Create React App
 
-This repo contains a boilerplate that'll get you going on a Payload install combined with a NextJS frontend.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-When you use Payload, you plug it into _**your**_ Express server. That's a fundamental difference between Payload and other CMS / application frameworks. It means that when you use Payload, you're adding Payload to your app, and not building a "Payload app".
+## Available Scripts
 
-One of the strengths of this pattern is that it lets you do powerful things like combining your Payload CMS directly with a custom NextJS server. With this pattern, you can host your Payload CMS as well as a fully dynamic, CMS-integrated NextJS site right on one host—while still getting all of the benefits of a headless CMS.
+In the project directory, you can run:
 
-**This boilerplate demonstrates the following:**
+### `npm start`
 
-- How to build a TypeScript Payload + NextJS project
-- How to use Payload's Uploads via a Media collection
-- How to seed initial data into your database through Payload's Local API
-- How to build dynamic layouts in React using Payload's Blocks field type
-- How to use Payload field hooks to dynamically generate and format page `slug`s
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## This pattern is great for the following situations:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-**1. If your content changes often, or is completely dynamic in nature.**
+### `npm test`
 
-Static sites are good for sites and apps where their content is typically set in stone at build-time, or does not change often. If your app's content doesn't change often, then taking advantage of a static site generator such as Gatsby or NextJS' static functionality might be a good fit. But, if your content changes constantly, or is completely dynamic, it might make sense to server-render your content instead.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**2. If your views depend on dynamic data for each load.**
+### `npm run build`
 
-If you need to generate views that depend on user-generated data, or data that changes based on who the authenticated user is, you might choose to server-render your app rather than generate it statically. If you were to go a static route, your site or app would have to do all the heavy lifting on the client side and might miss out on SEO opportunities.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**3. If parts of your app need to be server-rendered, but others are better suited to static generation.**
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Commonly, you might use Payload to build full applications - where certain views are statically generated, like pages and posts, but other views are fully dynamic and must be server-rendered—like an account portal or similar. If this describes your application, you can benefit by utilizing NextJS in both a server-rendered and statically generated context. At the same time, you'll benefit from running your Payload app completely within the same NextJS server.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Installation
+### `npm run eject`
 
-Here is a step-by-step guide for how to use this repo:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-1. Clone this repo using `git clone --depth=1 https://github.com/payloadcms/nextjs-custom-server.git <YOUR_PROJECT_NAME>`
-1. Run `cp .env.example .env` to create an `.env` file
-1. Fill out your `.env` file with values that describe your environment
-1. Run `yarn` or `npm install`
-1. Run `yarn dev` to open a development environment
-1. *optional* Run `yarn seed` to add sample pages and a Media upload
-1. Go to [http://localhost:3000/admin](http://localhost:3000/admin) to create your first user
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Building and serving in Production
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-This repo contains everything you need to both build your project for production purposes as well as serve it after it's been built.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- To build, run `yarn build` or `npm run build`.
-- To serve, run `yarn serve` or `npm run serve`.
+## Learn More
 
-### This boilerplate is not for all NextJS projects
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-We will be releasing more boilerplates over time, including one for pairing Payload with a statically generated NextJS site. If you don't need NextJS' server rendering, you should go fully static.
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
